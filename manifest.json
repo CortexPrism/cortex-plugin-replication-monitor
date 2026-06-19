@@ -1,0 +1,26 @@
+{
+  "name": "cortex-plugin-replication-monitor",
+  "version": "1.0.0",
+  "description": "Lag-Free Replication Monitor — PostgreSQL/MySQL/MongoDB replication lag monitoring with diagnosis and fixes",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-replication-monitor",
+  "homepage": "https://cortexprism.io/marketplace/plugins/replication-monitor",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "repl_monitor_lag", "description": "Monitor replication lag", "params": [] },
+    { "name": "repl_diagnose", "description": "Diagnose causes of lag", "params": [] },
+    { "name": "repl_alert", "description": "Configure lag alerts", "params": [] },
+    {
+      "name": "repl_suggest_fixes",
+      "description": "Suggest fixes for replication issues",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
